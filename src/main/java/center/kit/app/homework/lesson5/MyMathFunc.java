@@ -29,4 +29,7 @@ public class MyMathFunc {
     public double CeilCalc (double val){return ceil(val);}
     public double SingCalc (double val1, double val2){return copySign(val1,val2);}
     public double MinCalc (double val1, double val2){return min(val1,val2);}
+    public double RintCalc (double val){ return rint(val);}
+    public double AcosCalc (double val){return acos(val);}
+    public double HypotCalc(double val1, double val2){return hypot(val1,val2);}
 }

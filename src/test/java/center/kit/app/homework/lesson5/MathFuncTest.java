@@ -124,4 +124,25 @@ public class MathFuncTest {
         MyMathFunc myMathFunc = new MyMathFunc();
         double actRes=myMathFunc.MinCalc(val1,val2);
     }
+    @Test
+    public void RintTest(){
+        double val=33.44, expRes=33;
+        MyMathFunc myMathFunc = new MyMathFunc();
+        double actRes=myMathFunc.RintCalc(val);
+        Assert.assertEquals(expRes,actRes,0.0);
+    }
+    @Test
+    public void AcosTest (){
+        double val=1.0, expRes=0.0;
+        MyMathFunc myMathFunc = new MyMathFunc();
+        double actRes=myMathFunc.AcosCalc(val);
+        Assert.assertEquals(expRes,actRes,0.0);
+    }
+    @Test
+    public void HypotTest(){
+        double val1=3,val2=4,expRes=5;
+        MyMathFunc myMathFunc = new MyMathFunc();
+        double actRes =myMathFunc.HypotCalc(val1,val2);
+        Assert.assertEquals(expRes,actRes,0.0);
+    }
 }
