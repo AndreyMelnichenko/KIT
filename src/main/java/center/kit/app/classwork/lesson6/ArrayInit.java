@@ -3,13 +3,11 @@ package center.kit.app.classwork.lesson6;
 import java.util.Arrays;
 import java.util.Random;
 
-import static java.lang.Math.random;
-
 public class ArrayInit {
-    public static void Arrays(){
+    public static void SimpleArrays(){
         boolean[] boArray = {true,false,true};
         char[] chArray = {'q','a','z'};
-        double[] doArray = {2,6,33};
+        //double[] doArray = {2,6,33};
         long[] longArray = {13323,3523,565675};
         for (int i=0; i<boArray.length;i++){
             System.out.print(boArray[i]+" ");
@@ -26,17 +24,30 @@ public class ArrayInit {
         for (char arrElements:chArray){
             System.out.print(arrElements+" ");
         }
-        System.out.println("\n------------------");
+    }
+    public static void ArrToStr(){
+        long[] longArray = {13323,3523,565675};
         System.out.println(Arrays.toString(longArray));
-        System.out.println("\n------------------");
+    }
+    public static void ArrFor(){
         int[][] myltiArr = new int[2][3];
+        Random random = new Random();
         for (int i=0; i<myltiArr.length;i++){
             for (int k=0; k<myltiArr[i].length;k++){
-                Random random = new Random();
                 myltiArr[i][k]=random.nextInt(10);
                 System.out.print(myltiArr[i][k]+" ");
             }
             System.out.println(" ");
         }
+    }
+    public static void ArrForDeep(){
+        int[][] myltiArr = new int[2][3];
+        Random random = new Random();
+        for (int i=0; i<myltiArr.length;i++){
+            for (int k=0; k<myltiArr[i].length;k++){
+                myltiArr[i][k]=random.nextInt(10);
+            }
+        }
+        System.out.print(Arrays.deepToString(myltiArr));
     }
 }

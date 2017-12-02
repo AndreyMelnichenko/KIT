@@ -5,13 +5,13 @@ import center.kit.app.homework.lesson4.utils.convertors.PrimitiveConvector;
 public class Lesson4Runner {
     public static void main(String[] args) {
         //------   floatToChar  ----------
-        PrimitiveConvector floatToChar = new PrimitiveConvector(3.255567f);
-        System.out.println("Float ["+floatToChar.inputFloatVariable+"] converted to Char does: " + floatToChar.float2char());
+        float floarval = 36.6f;
+        System.out.println("Float ["+floarval+"] converted to Char does: " + PrimitiveConvector.float2char(floarval));
         //------   intToChar   ----------
-        PrimitiveConvector intToChar = new PrimitiveConvector(3746);
-        System.out.println("Int ["+intToChar.inputIntVariable+"] converted Char does: "+ intToChar.int2char());
+        int intval = 3746;
+        System.out.println("Int ["+intval+"] converted Char does: "+PrimitiveConvector.int2char(intval));
         //-------   charToInt   ---------
-        PrimitiveConvector charToInt = new PrimitiveConvector('x');
-        System.out.println("Char ["+charToInt.inputCharVariable+"] converted Int does: "+ charToInt.int2char());
+        char charval='e';
+        System.out.println("Char ["+charval+"] converted Int does: "+ PrimitiveConvector.char2int(charval));
     }
 }
