@@ -1,6 +1,7 @@
 package center.kit.app.classwork.lesson6;
 
 import java.util.Arrays;
+import java.util.Random;
 
 import static java.lang.Math.random;
 
@@ -27,12 +28,15 @@ public class ArrayInit {
         }
         System.out.println("\n------------------");
         System.out.println(Arrays.toString(longArray));
-        double[][] myltiArr = new double[2][3];
+        System.out.println("\n------------------");
+        int[][] myltiArr = new int[2][3];
         for (int i=0; i<myltiArr.length;i++){
             for (int k=0; k<myltiArr[i].length;k++){
-                myltiArr[i][k]=random();
-                System.out.println(myltiArr[i][k]+" ");
+                Random random = new Random();
+                myltiArr[i][k]=random.nextInt(10);
+                System.out.print(myltiArr[i][k]+" ");
             }
+            System.out.println(" ");
         }
     }
 }

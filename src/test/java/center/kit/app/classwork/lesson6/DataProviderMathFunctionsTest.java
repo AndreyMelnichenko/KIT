@@ -16,6 +16,6 @@ public class DataProviderMathFunctionsTest {
     public void dataProviderTestAdd(int argA, int argB, int expOut) {
         MathFunc mathFunc = new MathFunc();
         Assert.assertEquals(expOut, mathFunc.multiply(argA, argB));
-    } //make sure that variables are in same order and types as in csv file
+    }
 }
 
