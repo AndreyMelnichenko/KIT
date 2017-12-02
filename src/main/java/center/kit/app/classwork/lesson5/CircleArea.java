@@ -5,4 +5,10 @@ public class CircleArea {
     public double calculate (double radius){
         return PI*radius*radius;
     }
-}
+    /*public static void calculateBigger(int val1, int val2){
+        int a=2, b=6;
+       // if ((val1>a)||(b=val2)){
+            
+        }*/
+    }
+
