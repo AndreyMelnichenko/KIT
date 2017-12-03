@@ -20,7 +20,6 @@ public class Statement {
         for (int i=0; i<=20; i++){
             if (i%2==0){
                 counter=counter+1;
-                //System.out.println(i);
             }
         }
         System.out.println("i%2==0: "+counter);
