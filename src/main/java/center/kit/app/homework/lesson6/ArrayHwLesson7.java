@@ -3,7 +3,7 @@ package center.kit.app.homework.lesson6;
 import java.util.Arrays;
 import java.util.Random;
 
-public class ArrayPairShow {
+public class ArrayHwLesson7 {
     public static void ArrayTwenty() {
         int[][] arrayone = new int[21][21];
         for (int i = 0; i < 2; i++) {
@@ -68,6 +68,14 @@ public class ArrayPairShow {
     }
     public static void ArrayRandBig(){
         int[] myArray = new int[15];
-        
+        int max=0, min=999;
+        Random random = new Random();
+        for (int i = 0; i < myArray.length; i++) {
+            myArray[i] = random.nextInt(999);
+            if (myArray[i]>max){max=myArray[i];}
+            if (myArray[i]<min){min=myArray[i];}
+        }
+        System.out.println(Arrays.toString(myArray));
+        System.out.println("MIN="+min+" MAX="+max);
     }
 }
