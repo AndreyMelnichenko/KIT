@@ -121,6 +121,7 @@ public class ArrayHwLesson7 {
         int route = 1;
         long mysum = 0;
         while (route != 0) {
+            System.out.print("=>");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             String inputvalue = bufferedReader.readLine();
             route = Analyzer.analyzer(inputvalue);
@@ -128,7 +129,7 @@ public class ArrayHwLesson7 {
                 mysum = mysum + Integer.parseInt(inputvalue);
             }
             if (route == 2) { //to repeat input value
-                System.out.println("Wrong VALUE!!!!!");
+                System.out.print("Wrong VALUE! Repeat input ");
             }
         }
         System.out.println("Summa= " + mysum);
