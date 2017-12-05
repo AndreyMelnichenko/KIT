@@ -121,17 +121,17 @@ public class ArrayHwLesson7 {
         int route = 1;
         long mysum = 0;
         while (route != 0) {
-            System.out.print("=>");
+            System.out.print("ENTER integer value to SUM or type \"Exit\" to close program\n=>");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             String inputvalue = bufferedReader.readLine();
             route = Analyzer.analyzer(inputvalue);
-            if (route == 1) { //to summ
-                mysum = mysum + Integer.parseInt(inputvalue);
-            }
+            if (route == 1){
+                mysum = mysum + Long.parseLong(inputvalue);
+                }
             if (route == 2) { //to repeat input value
-                System.out.print("Wrong VALUE! Repeat input ");
+                System.out.print("Wrong VALUE! Repeat input!\n");
             }
         }
-        System.out.println("Summa= " + mysum);
+        System.out.println("PROGRAM is OVER.\nSumma= " + mysum);
     }
 }

@@ -12,8 +12,7 @@ public class Analyzer {
                 }
             }
             if (err == "NoError") {
-
-                return 1; //input value is MUNERIC and ready to parcing
+                return 1; //input value is NUMERIC and ready to parsing
             } else {
                 return 2;//System.out.println("WRONG FORMAT!!!!");
             }
