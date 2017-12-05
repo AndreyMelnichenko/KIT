@@ -1,7 +1,7 @@
 package center.kit.runners.homework.lesson6;
 
 public class Analyzer {
-    public static int analyzer (String val) {
+    public static int analyzer(String val) {
         if ((val.equals("exit")) || (val.equals("EXIT")) || (val.equals("Exit"))) {
             return 0;
         } else {
