@@ -1,12 +1,11 @@
 package center.kit.app.homework.lesson6;
 
-import center.kit.runners.homework.lesson6.Analyzer;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Random;
 
-public class ArrayHwLesson7 {
+public class ArraysHw {
     public static void exerciseA() {
         int[][] arrayone = new int[21][21];
         for (int i = 0; i < 2; i++) {
@@ -21,6 +20,7 @@ public class ArrayHwLesson7 {
                 }
             }
         }
+        System.out.print("\n");
     }
 
     public static void exerciseB() {
@@ -55,6 +55,7 @@ public class ArrayHwLesson7 {
                 System.out.print("\n");
             }
         }
+        System.out.print("\n");
     }
 
     public static void exerciseC() {
