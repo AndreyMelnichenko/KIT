@@ -1,0 +1,14 @@
+argumentA, expectedResult
+1,1
+0,1
+111111111111111111,1
+-11,1
+" ",2
+32r32r2,2
+234242424242.342342,2
+eeeeeeeeeeeee,2
+NUL,2
+exit,0
+EXIT,0
+Exit,0
+exIT,2

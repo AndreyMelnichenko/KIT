@@ -3,7 +3,7 @@ package center.kit.app.homework.lesson6;
 public class Analyzer {
     public static int analyzer(String val) {
         if ((val.equals("exit")) || (val.equals("EXIT")) || (val.equals("Exit"))) {
-            return 0;
+            return 0; //exit
         } else {
             String err = "NoError";
             if ((val.charAt(0) == 45) && (val.charAt(1) != 0)) {

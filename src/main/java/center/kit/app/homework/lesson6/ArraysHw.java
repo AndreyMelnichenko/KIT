@@ -22,7 +22,6 @@ public class ArraysHw {
         }
         System.out.print("\n");
     }
-
     public static void exerciseB() {
         int[] myarray = new int[100];
         System.out.print("\n+--------------------------+\n" +
@@ -57,7 +56,6 @@ public class ArraysHw {
         }
         System.out.print("\n");
     }
-
     public static void exerciseC() {
         int[] myArray = new int[15];
         int pairCounter = 0;

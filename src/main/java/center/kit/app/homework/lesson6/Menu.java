@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class Menu {
     public static final String STAR_LINE = "******************************************************\n";
     public static final String LEFT_STARS = "***";
-    public static final String RIGHT_STARS = "***\n";
+    public static final String RIGHT_STARS = "***\n"; //add const
 
     public static void intro() {
         System.out.print(STAR_LINE + LEFT_STARS + " Hi there! This program run homework tasks.     " + RIGHT_STARS +
