@@ -99,6 +99,7 @@ public class ArraysHw {
                 System.out.print(myArray[i][k] + " ");
             }
         }
+        System.out.print("\n");
     }
 
     public static void exerciseF() {
@@ -131,12 +132,16 @@ public class ArraysHw {
             System.out.print("ENTER integer value to SUM or type \"Exit\" to close program\n=>");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             String inputvalue = bufferedReader.readLine();
-            route = Analyzer.analyzer(inputvalue);
-            if (route == 1) {
-                mysum = mysum + Long.parseLong(inputvalue);
-            }
-            if (route == 2) { //to repeat input value
-                System.out.print("Wrong VALUE! Repeat input!\n");
+            if (inputvalue.isEmpty()) {
+                System.out.println("You didn't enter any values, repeat please!!!");
+            } else {
+                route = Analyzer.analyzer(inputvalue);
+                if (route == 1) {
+                    mysum = mysum + Long.parseLong(inputvalue);
+                }
+                if (route == 2) { //to repeat input value
+                    System.out.print("Wrong VALUE! Repeat input!\n");
+                }
             }
         }
         System.out.println("PROGRAM is OVER.\nSumma= " + mysum);

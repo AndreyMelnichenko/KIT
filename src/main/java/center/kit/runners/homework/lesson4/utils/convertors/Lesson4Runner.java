@@ -11,7 +11,7 @@ public class Lesson4Runner {
         int intval = 3746;
         System.out.println("Int ["+intval+"] converted Char does: "+PrimitiveConvector.int2char(intval));
         //-------   charToInt   ---------
-        char charval='e';
+        char charval='0';
         System.out.println("Char ["+charval+"] converted Int does: "+ PrimitiveConvector.char2int(charval));
     }
 }
