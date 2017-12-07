@@ -14,19 +14,4 @@ public class ConvPrimitiv {
         double douS = Double.valueOf(d);
         System.out.println(d+" <-STRING DOUBLE ->"+douS);
     }
-    public static void palindrom(){
-        String value = "qwyrtyytrewq";
-        boolean isPalindrom = true;
-        if (value.length()%2==0){
-            for (int i=0; i<(value.length()-1)/2; i++){
-                isPalindrom=isPalindrom&&(value.charAt(i)== value.charAt(value.length()-i-1));
-            }
-        }else {
-            isPalindrom=false;}
-            if (isPalindrom){
-                System.out.println("PALINDROM");
-            }else {
-                System.out.println("NOT PALINDROM");
-            }
-    }
 }
