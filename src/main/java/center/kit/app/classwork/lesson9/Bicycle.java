@@ -1,4 +1,4 @@
-package center.kit.app.classwork.lesson12;
+package center.kit.app.classwork.lesson9;
 
 public class Bicycle {
     public int speed;

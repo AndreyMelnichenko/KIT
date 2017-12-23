@@ -1,6 +1,6 @@
-package center.kit.runners.classwork.lesson12;
+package center.kit.runners.classwork.lesson9;
 /*
-//import center.kit.app.classwork.lesson12.Student;
+//import center.kit.app.classwork.lesson9.Student;
 
 public class Lesson12Runner {
     public static void main(String[] args) {
