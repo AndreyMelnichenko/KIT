@@ -1,6 +1,8 @@
 package center.kit.app.classwork.lesson11;
 
+
 import center.kit.app.homework.lesson6.Menu;
+
 import java.util.Scanner;
 
 public class EnumMenu {
@@ -9,7 +11,10 @@ public class EnumMenu {
         do {
             Menu.items();
             Scanner scanner = new Scanner(System.in);
-            if (scanner.nextLine().isEmpty()) {
+            if (!scanner.hasNextLine()) {
+                if (scanner.nextLine().isEmpty()) {
+                    System.out.println("You didn't enter anything. Repeat please!");
+                }
                 System.out.println("You didn't enter anything. Repeat please!");
             } else {
                 if (scanner.hasNextInt()) {
@@ -30,15 +35,15 @@ public class EnumMenu {
                         }
                     }
                 } else {
-                    String inputString=scanner.nextLine();
+                    String inputString = scanner.nextLine();
                     if (inputString.equals("exit")) {
                         isExit = true;
-                    }else {
+                    } else {
                         System.out.println("You entered STRING, please read menu instruction");
                     }
                 }
             }
 
-        }while (!isExit);
+        } while (!isExit);
     }
 }
