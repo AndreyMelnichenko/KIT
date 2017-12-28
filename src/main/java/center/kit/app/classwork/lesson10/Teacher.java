@@ -1,4 +1,4 @@
-package center.kit.app.classwork.lesson13;
+package center.kit.app.classwork.lesson10;
 
 public class Teacher extends Person {
     private int experience;
