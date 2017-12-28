@@ -3,6 +3,7 @@ package center.kit.app.homework.lesson7;
 import java.util.Scanner;
 
 public class MainMenu {
+<<<<<<< HEAD
     public static void menu() throws Exception {
         int menuMaxItem = 5;
         String[] menu = {"Type 'Exit' to exit program or 1-9 to choose menu item",
@@ -23,6 +24,11 @@ public class MainMenu {
             }
         } while (exit!=1);
     }
+=======
+    public static void menu(){
+       /// Scanner scanner = new Scanner(System.in);
+       // String invalue = scanner;
+>>>>>>> 1a6e3ac60474f75d08625e1574a018c24ec05624
 
     public static void analyzer(int val, int max_menu_item) {
         int route = 1;
