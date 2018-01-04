@@ -1,4 +1,4 @@
-package center.kit.app.homework.lesson6;
+package center.kit.app.homework.lesson6menu;
 
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;

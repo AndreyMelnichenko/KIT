@@ -1,4 +1,4 @@
-package center.kit.app.homework.lesson6;
+package center.kit.app.homework.lesson6menu;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -123,13 +123,15 @@ public class ArraysHw {
         }
     }
 
-    public static void exerciseG() throws Exception {
+    public static void exerciseG() {
         int route = 1;
         long mysum = 0;
         while (route != 0) {
             System.out.print("ENTER integer value to SUM or type \"Exit\" to close program\n=>");
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            String inputvalue = bufferedReader.readLine();
+            try {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+                String inputvalue = bufferedReader.readLine();
+
             if (inputvalue.isEmpty()) {
                 System.out.println("You didn't enter any values, repeat please!!!");
             } else {
@@ -140,6 +142,8 @@ public class ArraysHw {
                 if (route == 2) { //to repeat input value
                     System.out.print("Wrong VALUE! Repeat input!\n");
                 }
+            }}catch (Exception e){
+                System.out.println("ERROR!!!");
             }
         }
         System.out.println("PROGRAM is OVER.\nSumma= " + mysum);

@@ -1,11 +1,9 @@
-package center.kit.runners.homework.lesson6;
+package center.kit.runners.homework.menu;
 
 import center.kit.app.homework.lesson6menu.Menu;
 
-public class ArrayPairRun {
+public class MenuRunner {
     public static void main(String[] args) throws Exception {
-        Menu.intro();
-        Menu.items();
         Menu.chooseLoop();
     }
 }

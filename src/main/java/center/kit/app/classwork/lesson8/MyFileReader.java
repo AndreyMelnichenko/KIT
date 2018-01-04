@@ -4,7 +4,7 @@ import java.io.*;
 
 public class MyFileReader {
     public static void myreader() {
-        String currentDir = System.getProperty("user.dir");
+        /*String currentDir = System.getProperty("user.dir");
         String pathSeparator = System.getProperty("path.separator"); // :
         String fileSeparator = System.getProperty("file.separator"); // /
         String inputFile = "input.txt", outputFile = "output.txt", osType = System.getProperty("os.name");

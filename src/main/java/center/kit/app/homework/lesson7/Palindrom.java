@@ -1,8 +1,9 @@
 package center.kit.app.homework.lesson7;
 
+import java.util.Scanner;
+
 public class Palindrom {
     public static boolean isPalindrom(String value) {
-        //String value = "abcba";
         boolean isPalindrom = true;
         for (int i = 0; i < (value.length()) / 2; i++) {
             isPalindrom = isPalindrom && (value.charAt(i) == value.charAt(value.length() - i - 1));
@@ -17,7 +18,7 @@ public class Palindrom {
     }
 
     public static void isPalindrom2() {
-        String value = "abcba";
+        String value = "Abba";
         boolean isPalindrom = true;
         for (int i = 0; i < value.length() - 1; i++) {
             isPalindrom = isPalindrom && (value.charAt(i) == value.charAt(value.length() - i - 1));

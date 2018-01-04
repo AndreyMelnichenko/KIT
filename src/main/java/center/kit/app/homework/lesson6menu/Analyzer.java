@@ -1,4 +1,4 @@
-package center.kit.app.homework.lesson6;
+package center.kit.app.homework.lesson6menu;
 
 public class Analyzer {
     public static int analyzer(String val) {

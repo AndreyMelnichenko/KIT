@@ -11,7 +11,7 @@ public class WriterFile {
             String dirPath = "d:\\GIT\\javacore\\";
             String outputFileName = "output.txt";
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(dirPath + outputFileName)));
-            bufferedWriter(System.in);
+            //bufferedWriter(System.in);
         } catch (FileNotFoundException e) {
             System.out.println("File NOT FOUND");
         }

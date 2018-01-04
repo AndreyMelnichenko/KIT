@@ -5,9 +5,9 @@ public interface CarInterface {
     void changeGear(int shift);
     default void drive(){
         System.out.println("Cool drive");
-        madness();
+        //madness();
     }
-    private String madness(){
+    /*private String madness(){
         return "Oracle madness";
-    }
+    }*/
 }
