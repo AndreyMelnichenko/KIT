@@ -1,7 +1,5 @@
 package center.kit.app.homework.lesson7;
 
-import java.util.Scanner;
-
 public class Palindrom {
     public static boolean isPalindrom(String value) {
         boolean isPalindrom = true;
@@ -9,10 +7,10 @@ public class Palindrom {
             isPalindrom = isPalindrom && (value.charAt(i) == value.charAt(value.length() - i - 1));
         }
         if (isPalindrom) {
-            System.out.println("PALINDROM");
+            //System.out.println("PALINDROM");
             return true;
         } else {
-            System.out.println("NOT PALINDROM");
+            //System.out.println("NOT PALINDROM");
             return false;
         }
     }

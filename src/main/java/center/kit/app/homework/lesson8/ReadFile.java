@@ -40,6 +40,18 @@ public class ReadFile {
             try {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
                 String line;
+
+                while ((line = bufferedReader.readLine()) != null){
+                    int elements = ReadFile.lineElementsCounter(line);
+                    int[] MyArray = new int[elements];
+                    for (int i=0; i<=elements; i++){
+
+                        MyArray[i]=Integer.parseInt(line.split(","));
+                    }
+                }
+
+
+
                 bufferedWriter.close();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -75,5 +87,4 @@ public class ReadFile {
         }
         return i;
     }
-    public static double[]
 }
