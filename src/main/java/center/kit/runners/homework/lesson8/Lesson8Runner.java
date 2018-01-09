@@ -6,5 +6,6 @@ public class Lesson8Runner {
     public static void main(String[] args) {
         String inputFile = "input.txt", outputFile = "output.txt";
         ReadFile.isPalindromCheck(inputFile,outputFile);
+        ReadFile.arraySort(inputFile,outputFile);
     }
 }

@@ -59,8 +59,8 @@ public class Menu {
                     if ((choosed >= 9) || (choosed < 0)) {
                         System.out.println("Non-exist route! Repeat enter or type exit!");
                     } else {
-                        switch (choosed) {
-                            case 0:
+                        switch (choosed) {case 0:
+
                                 System.out.println("Unknown menu item. Repeat enter.\n" + STAR_LINE);
                                 break;
                             case 1:

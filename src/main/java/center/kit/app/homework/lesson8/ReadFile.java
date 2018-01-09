@@ -1,7 +1,6 @@
 package center.kit.app.homework.lesson8;
 
 import java.io.*;
-
 import static center.kit.app.homework.lesson7.Palindrom.isPalindrom;
 
 public class ReadFile {
@@ -40,18 +39,18 @@ public class ReadFile {
             try {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
                 String line;
-
-                while ((line = bufferedReader.readLine()) != null){
-                    int elements = ReadFile.lineElementsCounter(line);
-                    int[] MyArray = new int[elements];
-                    for (int i=0; i<=elements; i++){
-
-                        MyArray[i]=Integer.parseInt(line.split(","));
+                while ((line = bufferedReader.readLine()) != null) {
+                    String[] lineStrArr = line.split(",");
+                    int[] intArr = new int[lineElementsCounter(line)];
+                    for (int i = 0; i <= lineStrArr.length - 1; i++) {
+                        intArr[i] = Integer.parseInt(lineStrArr[i]);
                     }
+                    int[] sortedIntArr = ArraySorting.bubleSort(intArr);
+                    for (int i=0; i<=sortedIntArr.length-1; i++){
+                        bufferedWriter.write(sortedIntArr[i]+",");
+                    }
+                    bufferedWriter.write("\n");
                 }
-
-
-
                 bufferedWriter.close();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -64,13 +63,13 @@ public class ReadFile {
     }
 
     public static int lineElementsCounter(String line) {
-        int element=0;
-        for (int i=0; i<=line.length()-1; i++){
-            if ((int)line.charAt(i)==44){
-                element=element+1;
+        int element = 0;
+        for (int i = 0; i <= line.length() - 1; i++) {
+            if ((int) line.charAt(i) == 44) {
+                element = element + 1;
             }
         }
-        return element;
+        return element + 1;
     }
 
     public static int fileLinesCounter(String inputFile) {
