@@ -1,6 +1,6 @@
 package center.kit.app.homework.lesson8;
 
-public class ArraySorting {
+public class MyArraySort {
     public static int[] bubleSort(int[] inputArray) {
         for (int i = inputArray.length - 1; i >= 2; i--) {
             boolean sorted = true;

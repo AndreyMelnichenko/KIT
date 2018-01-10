@@ -2,7 +2,7 @@ package center.kit.app.homework.lesson8;
 
 import java.io.*;
 
-public class ConsoleWriter {
+public class ConsWriter {
     static final String CONS_LINE = "Enter line to write(*exit*)_>";
 
     public static void enterValue(String outputFile) {
@@ -20,7 +20,6 @@ public class ConsoleWriter {
                     } else if (inputedVal.equals("*exit*")) {
                         System.out.println("Program is ending...");
                     } else {
-                        System.out.println(inputedVal);
                         bufferedWriter.append(inputedVal);
                         bufferedWriter.newLine();
                     }

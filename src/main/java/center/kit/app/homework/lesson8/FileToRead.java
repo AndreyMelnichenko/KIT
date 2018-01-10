@@ -3,7 +3,7 @@ package center.kit.app.homework.lesson8;
 import java.io.*;
 import static center.kit.app.homework.lesson7.Palindrom.isPalindrom;
 
-public class ReadFile {
+public class FileToRead {
     public static void isPalindromCheck(String inputFile, String outputFile) {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFile));
@@ -45,7 +45,7 @@ public class ReadFile {
                     for (int i = 0; i <= lineStrArr.length - 1; i++) {
                         intArr[i] = Integer.parseInt(lineStrArr[i]);
                     }
-                    int[] sortedIntArr = ArraySorting.bubleSort(intArr);
+                    int[] sortedIntArr = MyArraySort.bubleSort(intArr);
                     for (int i=0; i<=sortedIntArr.length-1; i++){
                         bufferedWriter.write(sortedIntArr[i]+",");
                     }
