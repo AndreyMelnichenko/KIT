@@ -5,7 +5,7 @@ import center.kit.app.homework.lesson11.WhiteCollar;
 
 public class Lesson11Runner {
     public static void main(String[] args) {
-        //subRunner1();
+        subRunner1();
         subRunner2();
     }
     public static void subRunner1 (){
@@ -18,8 +18,8 @@ public class Lesson11Runner {
     public static void subRunner2(){
         WhiteCollar whiteCollar = new WhiteCollar("John",33,"Axel-Oxford, Benn-Inc");
         System.out.println(whiteCollar.getName()+"\n"+whiteCollar.getAge()+"\n"+whiteCollar.getCompany());
-        String newCompany = "New Company";
+        String newCompany = "RR-R, Com-pany, I-nc";
         whiteCollar.setCompany(newCompany);
-        System.out.println("New Company NAME "+whiteCollar.getCompany());
+        System.out.println("New Company NAME: "+whiteCollar.getCompany());
     }
 }
